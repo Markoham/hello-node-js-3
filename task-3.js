@@ -1,18 +1,10 @@
 var timestamp = require('./task-3-module');
+var moment = require('moment');
 var file = process.argv[2];
-
+moment.locale('fi');
 
 var formatDate = function(date) {
-  var datestr =
-    date.getDate() + "." +
-    (date.getMonth() + 1) + "." +
-    (date.getYear() + 1900);
-
-  var timestr =
-    date.getHours() +":" + date.getMinutes() + ":" +
-    date.getSeconds();
-
-    return datestr + " " + timestr;
+    return moment().format('L HH:mm:ss');
 };
 
 timestamp.getTimestamp(file,function(err,time){
