@@ -1,0 +1,19 @@
+{
+  "name": "Task4-1",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "main": "task-3.js",
+  "scripts": {
+    "start": "node task-3.js"
+  },
+  "dependencies": {
+    "jshint": "latest"
+  },
+  "jshintConfig": {
+	"undef": true,
+	"unused": true,
+	"asi": true,
+	"node": true
+  }
+}
