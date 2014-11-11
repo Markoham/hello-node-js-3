@@ -3,6 +3,7 @@ var file = process.argv[2];
 
 
 var formatDate = function(date) {
+
   var datestr =
     date.getDate() + "." +
     (date.getMonth() + 1) + "." +
@@ -15,12 +16,5 @@ var formatDate = function(date) {
     return datestr + " " + timestr;
 };
 
-timestamp.getTimestamp(file,function(err,time){
-  if(err){
-    console.log(err);
-    return;
-  }
-
+var time = timestamp.getTimestamp(file);
   console.log(formatDate(time));
-
-});

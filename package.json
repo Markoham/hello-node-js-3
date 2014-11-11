@@ -8,12 +8,9 @@
     "start": "node task-3.js"
   },
   "dependencies": {
-    "jshint": "latest"
-  },
-  "jshintConfig": {
-	"undef": true,
-	"unused": true,
-	"asi": true,
-	"node": true
+    "jshint": "latest",
+    "nodeunit": "latest",
+    "moment": "latest",
+    "jslint": "^0.6.5"
   }
 }
