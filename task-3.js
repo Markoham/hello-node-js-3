@@ -15,12 +15,14 @@ var formatDate = function(date) {
     return datestr + " " + timestr;
 };
 
-timestamp.getTimestamp(file,function(err,time){
+var timestamp = timestamp.getTimestamp(file,function(err,time){
   if(err){
     console.log(err);
-    return;
+    return err;
   }
-
-  console.log(formatDate(time));
-
+  else{
+    return time;
+  }
 });
+
+console.log(formatDate(timestamp));
